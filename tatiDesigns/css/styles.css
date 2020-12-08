@@ -1,0 +1,291 @@
+/* TATIANA PERRY
+LAST UPDATE ON November 19, 2020
+PORTFOLIO/ WEB DESIGN & DEVELOPMENT
+ */
+.nav-wrapper {
+  height: 90px;
+  width: 100%;
+  position: fixed;
+}
+.nav-wrapper nav {
+  max-width: 980px;
+  height: 90px;
+  border-bottom: solid 2px #79addc;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-wrapper nav .logo {
+  position: relative;
+  height: 42px;
+  width: 500px;
+}
+.nav-wrapper nav .logo span {
+  position: absolute;
+  bottom: 5px;
+  color: white;
+  font-size: 20px;
+  font-family: neue, Helvetica, sans-serif;
+}
+.nav-wrapper nav .links {
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-wrapper nav .links a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-family: neue, Helvetica, sans-serif, sans-serif;
+}
+
+.hero {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(131, 221, 243, 0.959),
+      rgba(182, 182, 182, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../images/logo/homeHero.jpg);
+  height: 700px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .centered-content h1 {
+  font-size: 60px;
+  font-family: neue, Helvetica, sans-serif, sans-serif;
+  font-weight: lighter;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .centered-content h2 {
+  font-size: 30px;
+  font-family: neue, Helvetica, sans-serif, sans-serif;
+  font-weight: lighter;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .pink {
+  font-family: neue, Helvetica, sans-serif sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .blue-box {
+  margin: 0 auto;
+  width: 140px;
+  height: 50px;
+  color: #ffffff;
+  background-color: #79addc;
+}
+.hero .blue-box span {
+  margin-top: 50px;
+  font-weight: lighter;
+  font-size: 20px;
+  font-family: neue, Helvetica, sans-serif, sans-serif;
+  padding-left: 15px;
+}
+
+/* Three image containers  */
+.column1 {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row1 {
+  display: flex;
+}
+
+.column1 {
+  height: 300px;
+  flex: 33.33%;
+  padding: 5px;
+}
+
+/* ABOUT PAGE */
+
+.about {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.959),
+      rgba(182, 182, 182, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../images/logo/aboutHero.jpg);
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* WORK PAGE  */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* Contact Page */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+.containor {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: white;
+  padding: 25px;
+  margin: 50px 0;
+}
+
+#contact h3 {
+  color: #0cf;
+  display: block;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #0cf;
+  color: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #09c;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #999;
+}
+::-webkit-input-placeholder {
+  color: #888;
+}
+:-moz-placeholder {
+  color: #888;
+}
+::-moz-placeholder {
+  color: #888;
+}
+:-ms-input-placeholder {
+  color: #888;
+}
