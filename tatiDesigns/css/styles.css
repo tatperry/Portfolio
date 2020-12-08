@@ -120,9 +120,11 @@ PORTFOLIO/ WEB DESIGN & DEVELOPMENT
   flex: 33.33%;
   padding: 5px;
 }
-
+/*  */
+/*  */
 /* ABOUT PAGE */
-
+/*  */
+/*  */
 .about {
   background-image: linear-gradient(
       to bottom,
@@ -139,7 +141,11 @@ PORTFOLIO/ WEB DESIGN & DEVELOPMENT
   align-items: center;
   justify-content: center;
 }
+/*  */
+/*  */
 /* WORK PAGE  */
+/*  */
+/*  */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -170,12 +176,15 @@ PORTFOLIO/ WEB DESIGN & DEVELOPMENT
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
-    flex: 100%;
-    max-width: 100%;
+    flex: 50%;
+    max-width: 50%;
   }
 }
+/*  */
+/*  */
 /* Contact Page */
-
+/*  */
+/*  */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 
 .containor {
